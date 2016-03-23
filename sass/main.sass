@@ -1,0 +1,291 @@
+@import "bourbon/bourbon"
+
+html.js .loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_inner
+		background-image: url("../img/preloader.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+body
+	font-family: "exo2light", sans-serif
+	font-weight: normal
+	font-size: 18px
+	min-width: 1200px
+	position: relative
+	line-height: 1.6
+	color: #333
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+
+.container
+	width: 1170px !important
+
+h1
+	font-size: 60px
+	font-family: "exo2medium", sans-serif
+	text-transform: uppercase
+	font-weight: normal
+
+h2
+	font-size: 48px
+	font-weight: normal
+
+a
+	&:hover, &:focus, &:active
+		text-decoration: none
+		outline: none
+
+.clearpad
+	padding: 0
+
+.hidden
+	display: none
+	
+.top_line
+	.logo_wrap
+		display: inline-block
+		width: 301px
+		position: relative
+		margin-right: 50px
+		top: -10px
+		img
+			width: 100%
+
+.date_wrap
+	display: inline-block
+	width: 240px
+	height: 114px
+	background-image: url(../img/bg_date.jpg)
+	background-size: cover
+	padding-left: 20px
+	p
+		font-size: 14px
+		margin: 18px 0 0
+	span
+		font-size: 20px
+	.date_week
+		font-family: "exo2bold", sans-serif
+	.week_img_wrap
+		margin-top: 9px
+		.week_wrap
+			width: 26px
+			height: 4px
+			background-color: #25aae1
+			display: inline-block
+			float: left
+			margin-right: 1px
+		.active
+			background-color: #00658f
+		.weekend
+			background-color: #ed1c43
+
+.contact_wrap
+	display: inline-block
+	float: right
+	text-align: center
+	margin-top: 10px
+	span
+		display: block
+		padding-left: 47px
+		font-size: 30px
+		color: #ed1c24
+		font-family: "exo2bold", sans-serif
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			width: 46px
+			height: 35px
+			background-image: url(../img/ic_tel.jpg)
+			top: 3px
+			left: 0
+	
+.btn
+	font-size: 16px
+	color: #0096e0
+	text-decoration: underline
+	display: block
+	position: relative
+	margin-top: 10px
+	&:hover
+		color: #0096e0
+		text-decoration: none
+
+.locate_wrap
+	width: 229px
+	height: 56px
+	background-color: #494949
+	border-radius: 28px
+	float: right
+	display: inline-block
+	position: relative
+	margin-top: 16px
+	margin-right: 50px
+	z-index: 10
+	p
+		display: block
+		z-index: 20
+		margin: 0
+		text-align: center
+		font-size: 18px
+		font-family: "exo2bold", sans-serif
+		line-height: 22px
+		margin-top: 5px
+		position: relative
+	&::before
+		content: ''
+		position: absolute
+		display: inline-block
+		width: 229px
+		height: 56px
+		background-color: #f38f32
+		background-image: linear-gradient(to top, #d3d4d5 0%, #f6f6f6 100%)
+		border-radius: 28px
+		left: 0
+		bottom: 3px
+		z-index: 1
+
+.menu
+	background-color: #f4faff
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+		text-align: center
+		font-size: 0
+		li
+			display: inline-block
+			font-size: 18px
+			a
+				color: #00658f
+				padding: 27px 45px
+				border-right: 1px solid #e4eef6
+				display: block
+				transition: all .3s ease
+				&:hover
+					background-color: #e4eef6
+
+.slider_home
+	.slide
+		background-size: cover
+		background-position: center
+		min-height: 634px
+	.slide1
+		background-image: url(../img/slide1_home.jpg)
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			left: 0
+			top: 0
+			background-color: #000
+			opacity: .7
+		.title_wrap
+			padding: 0 75px
+			text-align: center
+			margin-top: 210px
+			h1
+				margin: 0
+				text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8)
+				color: white
+				line-height: 70px
+	.slide2
+		background-image: url(../img/slide2_home.jpg)
+		text-align: center
+		.title_wrap
+			text-align: center
+			margin-top: 210px
+			max-width: 730px
+			display: inline-block
+			h2
+				color: #006bb7
+				font-size: 60px
+				font-family: "exo2medium", sans-serif
+				text-transform: uppercase
+				font-weight: normal
+				line-height: 70px
+	.slide3
+		background-image: url(../img/slide3_home.jpg)
+		.title_wrap
+			text-align: left
+			margin-top: 170px
+			max-width: 630px
+			display: inline-block
+			h3
+				color: #019ed5
+				font-size: 48px
+				font-family: "exo2medium", sans-serif
+				text-transform: uppercase
+				font-weight: normal
+				line-height: 55px
+				span
+					color: #f00
+					display: block
+
+.s_quality
+	background-image: url(../img/bg_quality.jpg)
+	background-size: cover
+	background-position: center
+	min-height: 884px
+	margin-top: 7px
+	h3
+		font-size: 48px
+		font-weight: normal
+		margin-top: 35px
+		line-height: 58px
+		margin-bottom: 0
+	p
+		margin: 10px 0 40px
+		line-height: 22px
+
+.item_q
+	border: 2px solid #04aaed
+	margin-left: 70px
+	position: relative
+	padding: 5px 8px 26px 12px
+	margin-bottom: 14px
+	&::before
+		content: ''
+		position: absolute
+		width: 41px
+		height: 30px
+		background-image: url(../img/ic_success.png)
+		top: 18px
+		left: -70px
+	span
+		font-size: 30px
+		text-transform: uppercase
+	.btn
+		display: inline-block
+		position: absolute
+		right: 5px
+		bottom: 5px
+		float: right
