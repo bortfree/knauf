@@ -289,3 +289,254 @@ a
 		right: 5px
 		bottom: 5px
 		float: right
+
+.s_title_wrap
+	text-align: center
+	h2
+		margin-top: 0
+		color: #000
+		padding-top: 35px
+		line-height: 55px
+
+.s_why
+	background-image: url(../img/bg_why.jpg)
+	background-size: cover
+	background-position: center
+	min-height: 1273px
+
+.item_wrap_why
+	margin: 0 70px
+	background-color: #eceeef
+	max-width: 1000px
+	margin-bottom: 30px
+	&__img
+		display: inline-block
+	p
+		line-height: 24px
+		margin-left: 35px
+		span
+			font-family: "exo2bold", sans-serif
+	ol
+		margin-left: 15px
+		li
+			margin-bottom: 20px
+			line-height: 24px
+			span
+				font-family: "exo2bold", sans-serif
+
+.item_wrap_why
+	.left
+		float: left
+		margin-right: 35px
+	.right
+		float: right
+		margin-left: 35px
+
+.color
+	h2
+		color: #fff
+
+.s_video
+	background-image: url(../img/bg_video.jpg)
+	background-size: cover
+	background-position: center
+	min-height: 775px
+	position: relative
+	text-align: center
+	&::before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 100%
+		left: 0
+		top: 0
+		background-color: #000
+		opacity: .8
+	.s_title_wrap
+		h2
+			margin-bottom: 15px
+	p
+		color: #fff
+		padding: 0 120px
+		line-height: 24px
+		margin-top: 30px
+	iframe
+		border: none
+
+.s_table
+	background-image: url(../img/bg_table.jpg)
+	background-size: cover
+	background-position: center
+	min-height: 1315px
+	position: relative
+	text-align: center
+	&::before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 100%
+		left: 0
+		top: 0
+		background-color: #fff
+		opacity: .7
+	.descr_wrap_table
+		display: inline-block
+		width: 65%
+		p
+			font-size: 22px
+			text-align: left
+			span
+				color: #f00
+				font-family: "exo2medium", sans-serif
+	.button_wrap
+		margin-top: 35px
+
+.button
+	font-size: 30px
+	font-family: "exo2medium", sans-serif
+	text-transform: uppercase
+	background-color: #00a99d
+	border-radius: 2px
+	border-bottom: 3px solid #008178
+	color: #fff
+	padding: 10px 66px
+	transition: all .3s ease
+	&:hover, &:focus
+		color: #fff
+	&:hover
+		background-color: lighten(#00a99d, 5%)
+
+
+.table_wrap
+	display: inline-block
+	width: 1000px
+
+.table
+	background-color: #fff
+	width: 100%
+	text-align: left
+	tr
+		&:first-child
+			td
+				&:nth-child(2), &:nth-child(3)
+					font-size: 22px
+					font-family: "exo2medium", sans-serif
+					padding: 10px 15px
+		&:nth-child(2)
+			td
+				&:first-child
+					font-size: 18px
+		td
+			border: 1px solid #5b9bd5
+			width: 33%
+			padding: 5px 15px
+			line-height: 22px
+			span
+				font-family: "exo2semibold", sans-serif
+				display: block
+			.red_sp
+				color: #f00
+			&:first-child
+				font-size: 22px
+				padding: 15px
+
+.s_help
+	background-image: url(../img/bg_help.jpg)
+	background-size: cover
+	background-position: center
+	min-height: 976px
+	position: relative
+	text-align: center
+	&::before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 100%
+		left: 0
+		top: 0
+		background-color: #000
+		opacity: .6
+	.s_title_wrap
+		padding: 0 120px
+
+.item_help
+	width: 315px
+	height: 343px
+	display: inline-block
+	background-color: #fff
+	position: relative
+	overflow: hidden
+	margin: 8px
+	&__img
+		width: 100%
+		height: 270px
+		line-height: 270px
+		img
+			max-width: 100%
+			height: auto
+	&__descr
+		position: absolute
+		width: 100%
+		height: 100%
+		background-color: #f2f2f2
+		top: 0
+		left: 0
+		padding: 0 10px
+		transform: translateY(270px)
+		transition: all .5s ease
+		h4
+			font-size: 20px
+			font-weight: normal
+			font-family: "exo2semibold", sans-serif
+			margin: 15px 0
+			line-height: 24px
+			height: 73px
+		p
+			font-family: "exo2regular", sans-serif
+			line-height: 22px
+	&:hover
+		.item_help__descr
+			transform: translateY(0)
+
+.s_price
+	text-align: center
+	padding-bottom: 220px
+	.s_title_wrap
+		padding: 0 70px
+
+.block_items_price
+	h3
+		font-size: 36px
+		color: #00aeef
+		font-weight: normal
+		margin-bottom: 10px
+	.item_price
+		width: 315px
+		height: 135px
+		border: 1px solid #00aeef
+		display: inline-block
+		margin: 0 10px
+		font-family: "exo2semibold", sans-serif
+		p
+			font-size: 24px
+			margin: 17px 0
+			span
+				color: #f00
+		h4
+			text-transform: uppercase
+			font-size: 20px
+			color: #fff
+			background-color: #00aeef
+			margin: 
+			padding: 11px 0
+			font-weight: normal
+	.item_hit
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			width: 481px
+			height: 176px
+			background-image: url(../img/arrow_hit.png)
+			right: -234px
+			bottom: -194px
