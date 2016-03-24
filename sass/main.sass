@@ -620,4 +620,178 @@ a
 		color: #fff
 		padding-left: 10px
 
+.s_work
+	background-image: url(../img/bg_work.jpg)
+	background-size: cover
+	background-position: center
+	min-height: 446px
+	position: relative
+	text-align: center
+	padding-bottom: 35px
+	&::before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 100%
+		left: 0
+		top: 0
+		background-color: #000
+		opacity: .6
+		z-index: 0
+	.s_title_wrap
+		font-family: "exo2bold", sans-serif
+		h2
+			padding-top: 25px
+			margin-bottom: 25px
+	.button_wrap
+		.button_yellow
+			background-color: #ffb500
+			font-size: 26px
+			color: #000
+			font-family: "exo2light", sans-serif
+			border-bottom: 3px solid #a77700
+			padding: 10px 46px
+			&:hover
+				background-color: darken(#ffb500, 7%)
+
+
+.slider_work
+	margin-bottom: 35px
+	.slide
+		width: 100%
+		background-color: #fff
+		height: 280px
+		&__img
+			float: right
+			width: 550px
+			height: 280px
+			line-height: 278px
+			margin-left: 60px
+			img
+				max-width: 100%
+				max-height: 100%
+		&__descr
+			padding: 40px 20px 0
+			text-align: left
+			font-size: 15px
+			position: relative
+			line-height: 20px
+			font-family: "exo2regular", sans-serif
+
+
+.slider_work
+	position: relative
+	.owl-controls
+		.owl-nav
+			.owl-prev, .owl-next
+				position: absolute
+				width: 25px
+				height: 100%
+				background-color: #25aae1
+				top: 0
+				bottom: 0
+				opacity: 1
+				transition: all .3s ease
+				line-height: 280px
+				color: #fff
+				&:hover
+					opacity: .8
+			.owl-prev
+				left: -25px
+			.owl-next
+				right: -25px
+
+.bigpad
+	padding: 0 85px
+
+.descr_wrap_double
+	line-height: 24px
+	margin-bottom: 40px
+	img
+		float: left
+		margin-right: 20px
+
+.sect_2
+	background-image: url(../img/bg_collective2.jpg);
+	min-height: 505px;
+	.descr_collective
+		p
+			padding: 0 50px
+
+.s_clients
+	text-align: center
+	.social
+		margin: 30px 0
+		span
+			font-size: 48px
+			display: inline-block
+		.social_script
+			display: inline-block
+			position: relative
+			top: 7px
+	.item_client
+		width: 191px
+		height: 122px
+		background-color: white
+		border: 1px solid #00aeef
+		display: inline-block
+		line-height: 122px
+		margin: 3px 1px
+		img
+			max-width: 100%
+			max-height: 100%
+
+.footer
+	padding: 17px 0
+	background-color: #2e7fb8
+	color: #fff
+	text-align: center
+	.logo_wrap
+		display: inline-block
+		float: left
+		margin-top: 5px
+	.block_footer
+		display: inline-block
+		vertical-align: top
+		padding-left: 34px
+		position: relative
+		text-align: left
+		margin-right: 20px
+		&::before
+			content: ''
+			position: absolute
+
+		h4
+			margin: 0
+			font-weight: normal
+			font-family: "exo2bold", sans-serif
+			line-height: 24px
+		p
+			font-size: 14px
+			margin: 0
+			line-height: 16px
+	.work_time
+		&::before
+			width: 22px
+			height: 22px
+			background-image: url(../img/ic_time.png)
+			left: 3px
+			top: 1px
+	.locate
+		&::before
+			width: 13px
+			height: 20px
+			background-image: url(../img/ic_map.png)
+			left: 13px
+			top: 2px
+	.contact_wrap
+		margin-top: 5px
+		span
+			color: #fff
+			padding-left: 30px
+			&::before
+				width: 19px
+				height: 19px
+				background-image: url(../img/ic_phone.png)
+				top: 15px
 

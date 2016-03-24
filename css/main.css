@@ -621,3 +621,170 @@ a:hover, a:focus, a:active {
   .my_form label {
     color: #fff;
     padding-left: 10px; }
+
+.s_work {
+  background-image: url(../img/bg_work.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 446px;
+  position: relative;
+  text-align: center;
+  padding-bottom: 35px; }
+  .s_work::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    opacity: .6;
+    z-index: 0; }
+  .s_work .s_title_wrap {
+    font-family: "exo2bold", sans-serif; }
+    .s_work .s_title_wrap h2 {
+      padding-top: 25px;
+      margin-bottom: 25px; }
+  .s_work .button_wrap .button_yellow {
+    background-color: #ffb500;
+    font-size: 26px;
+    color: #000;
+    font-family: "exo2light", sans-serif;
+    border-bottom: 3px solid #a77700;
+    padding: 10px 46px; }
+    .s_work .button_wrap .button_yellow:hover {
+      background-color: #db9c00; }
+
+.slider_work {
+  margin-bottom: 35px; }
+  .slider_work .slide {
+    width: 100%;
+    background-color: #fff;
+    height: 280px; }
+    .slider_work .slide__img {
+      float: right;
+      width: 550px;
+      height: 280px;
+      line-height: 278px;
+      margin-left: 60px; }
+      .slider_work .slide__img img {
+        max-width: 100%;
+        max-height: 100%; }
+    .slider_work .slide__descr {
+      padding: 40px 20px 0;
+      text-align: left;
+      font-size: 15px;
+      position: relative;
+      line-height: 20px;
+      font-family: "exo2regular", sans-serif; }
+
+.slider_work {
+  position: relative; }
+  .slider_work .owl-controls .owl-nav .owl-prev, .slider_work .owl-controls .owl-nav .owl-next {
+    position: absolute;
+    width: 25px;
+    height: 100%;
+    background-color: #25aae1;
+    top: 0;
+    bottom: 0;
+    opacity: 1;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    line-height: 280px;
+    color: #fff; }
+    .slider_work .owl-controls .owl-nav .owl-prev:hover, .slider_work .owl-controls .owl-nav .owl-next:hover {
+      opacity: .8; }
+  .slider_work .owl-controls .owl-nav .owl-prev {
+    left: -25px; }
+  .slider_work .owl-controls .owl-nav .owl-next {
+    right: -25px; }
+
+.bigpad {
+  padding: 0 85px; }
+
+.descr_wrap_double {
+  line-height: 24px;
+  margin-bottom: 40px; }
+  .descr_wrap_double img {
+    float: left;
+    margin-right: 20px; }
+
+.sect_2 {
+  background-image: url(../img/bg_collective2.jpg);
+  min-height: 505px; }
+  .sect_2 .descr_collective p {
+    padding: 0 50px; }
+
+.s_clients {
+  text-align: center; }
+  .s_clients .social {
+    margin: 30px 0; }
+    .s_clients .social span {
+      font-size: 48px;
+      display: inline-block; }
+    .s_clients .social .social_script {
+      display: inline-block;
+      position: relative;
+      top: 7px; }
+  .s_clients .item_client {
+    width: 191px;
+    height: 122px;
+    background-color: white;
+    border: 1px solid #00aeef;
+    display: inline-block;
+    line-height: 122px;
+    margin: 3px 1px; }
+    .s_clients .item_client img {
+      max-width: 100%;
+      max-height: 100%; }
+
+.footer {
+  padding: 17px 0;
+  background-color: #2e7fb8;
+  color: #fff;
+  text-align: center; }
+  .footer .logo_wrap {
+    display: inline-block;
+    float: left;
+    margin-top: 5px; }
+  .footer .block_footer {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 34px;
+    position: relative;
+    text-align: left;
+    margin-right: 20px; }
+    .footer .block_footer::before {
+      content: '';
+      position: absolute; }
+    .footer .block_footer h4 {
+      margin: 0;
+      font-weight: normal;
+      font-family: "exo2bold", sans-serif;
+      line-height: 24px; }
+    .footer .block_footer p {
+      font-size: 14px;
+      margin: 0;
+      line-height: 16px; }
+  .footer .work_time::before {
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/ic_time.png);
+    left: 3px;
+    top: 1px; }
+  .footer .locate::before {
+    width: 13px;
+    height: 20px;
+    background-image: url(../img/ic_map.png);
+    left: 13px;
+    top: 2px; }
+  .footer .contact_wrap {
+    margin-top: 5px; }
+    .footer .contact_wrap span {
+      color: #fff;
+      padding-left: 30px; }
+      .footer .contact_wrap span::before {
+        width: 19px;
+        height: 19px;
+        background-image: url(../img/ic_phone.png);
+        top: 15px; }

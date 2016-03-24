@@ -8,6 +8,15 @@ $(function() {
 		autoplayTimeout: 5000
 	});
 
+	$(".slider_work").owlCarousel({
+		items: 1,
+		loop: true,
+		nav: true,
+		navText: ['<i class="fa fa-long-arrow-left"></i>', '<i class="fa fa-long-arrow-right"></i>'],
+		autoplay: true, 
+		autoplayTimeout: 5000
+	});
+
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {
