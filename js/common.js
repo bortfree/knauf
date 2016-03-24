@@ -1,5 +1,7 @@
 $(function() {
 
+	
+
 	$(".popup").magnificPopup({
 		removalDelay: 300,
 		mainClass: 'mfp-fade'
