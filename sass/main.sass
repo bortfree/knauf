@@ -40,7 +40,7 @@ body textarea:focus:required:invalid
 	color: red
 body input:required:valid,
 body textarea:required:valid
-	color: green
+	color: #333
 
 
 .container
@@ -527,8 +527,8 @@ a
 			font-size: 20px
 			color: #fff
 			background-color: #00aeef
-			margin: 
-			padding: 11px 0
+			margin: 0
+			padding: 15px 0
 			font-weight: normal
 	.item_hit
 		position: relative
@@ -603,14 +603,14 @@ a
 		text-transform: uppercase
 		padding-top: 25px
 		margin-bottom: 0
-	input, button
+	input, .button, textarea
 		width: 100%
-	button
+	.button
 		padding: 10px 0
 		border: none
 		display: block
 		margin-top: 5px
-	input
+	input, textarea
 		border-radius: 2px
 		border: none
 		color: #333
@@ -712,8 +712,8 @@ a
 		margin-right: 20px
 
 .sect_2
-	background-image: url(../img/bg_collective2.jpg);
-	min-height: 505px;
+	background-image: url(../img/bg_collective2.jpg)
+	min-height: 505px
 	.descr_collective
 		p
 			padding: 0 50px
@@ -795,3 +795,93 @@ a
 				background-image: url(../img/ic_phone.png)
 				top: 15px
 
+.banner--clone
+	z-index: 50
+	width: 100%
+	background-color: #fff
+	.logo_wrap
+		width: 240px
+		margin-top: 7px
+		top: -3px
+	.date_wrap, .locate_wrap, .contact_wrap a
+		display: none
+	.contact_wrap
+		margin-top: 5px
+		span
+			line-height: 34px
+			&::before
+				top: -3px
+	.menu
+		ul
+			li
+				a
+					padding: 7px 45px
+
+#form_pop
+	width: 455px
+	background-color: #fff
+	color: #333
+	min-height: auto
+	padding-bottom: 30px
+	margin: 0 auto
+	position: relative
+	h4
+		color: #333
+	input, textarea
+		border: 1px solid #00aeef
+	label
+		color: #333
+	textarea
+		resize: none
+
+.mfp-close-btn-in
+	.mfp-close
+	
+
+.mfp-fade
+	&.mfp-bg
+		opacity: 0
+		-webkit-transition: all 0.15s ease-out
+		-moz-transition: all 0.15s ease-out
+		transition: all 0.15s ease-out
+		&.mfp-ready
+			opacity: 0.8
+		&.mfp-removing
+			opacity: 0
+	&.mfp-wrap
+		.mfp-content
+			opacity: 0
+			-webkit-transition: all 0.15s ease-out
+			-moz-transition: all 0.15s ease-out
+			transition: all 0.15s ease-out
+		&.mfp-ready .mfp-content
+			opacity: 1
+		&.mfp-removing .mfp-content
+			opacity: 0
+
+.pop_descr
+	background-color: #fff
+	margin: 0 auto
+	width: 70%
+	position: relative
+	text-align: center
+	padding: 0 30px 30px
+	h3
+		padding-top: 30px
+		font-size: 30px
+		font-weight: normal
+		text-transform: uppercase
+	p
+		font-size: 24px
+
+.done
+	width: 455px
+	background-color: #fff
+	color: #333
+	min-height: auto
+	padding-bottom: 30px
+	margin: 0 auto
+	position: relative
+	text-align: center
+	h4
+		color: #333

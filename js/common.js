@@ -1,5 +1,31 @@
 $(function() {
 
+	$(".popup").magnificPopup({
+		removalDelay: 300,
+		mainClass: 'mfp-fade'
+	});
+
+	$(".menu ul li a").mPageScroll2id({
+          offset: 86
+        });
+
+	// Set options
+	 var options = {
+	 	offset: '#showHere',
+	 	offsetSide: 'top',
+	 	classes: {
+	 		clone:   'banner--clone',
+	 		stick:   'banner--stick',
+	 		unstick: 'banner--unstick'
+	 	}
+	 };
+
+        // Initialise with options
+        var banner = new Headhesive('.banner', options);
+
+        // Headhesive destroy
+        // banner.destroy();
+
 	$(".slider_home").owlCarousel({
 		items: 1,
 		loop: true,
@@ -33,7 +59,12 @@ $(function() {
 			url: "mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			alert("Thank you!");
+			$.magnificPopup.open({
+        items: {
+          src: '.done'
+        },
+        type: 'inline'
+      });
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");
